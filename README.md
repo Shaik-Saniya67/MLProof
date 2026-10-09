@@ -1,32 +1,47 @@
-🛡️ MLProof — Machine Learning Model Auditor
+🛡️ MLProof
 
-Evaluate model reliability before trusting its predictions.
+Machine Learning Model Auditor
 
-MLProof is a Streamlit-based machine learning auditing tool designed to identify potential issues in datasets and machine learning models. It analyzes data quality, class imbalance, data leakage risks, baseline performance, cross-validation, and overfitting indicators to help users understand potential weaknesses before relying on model results.
+Because a good score is not the same as a trustworthy model.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/Machine_Learning-7C3AED?style=for-the-badge" alt="Machine Learning"/>
+  <img src="https://img.shields.io/badge/Data_Auditing-0891B2?style=for-the-badge" alt="Data Auditing"/>
+</p>---
+
+🚀 Overview
+
+MLProof is a Python-based machine learning auditing application built with Streamlit. It helps users inspect datasets and evaluate potential weaknesses in machine learning workflows before relying on model performance.
+
+Instead of focusing only on accuracy scores, MLProof examines potential issues such as class imbalance, data leakage risks, overfitting indicators, and validation performance.
 
 ✨ Key Features
 
-- 🔍 Dataset Discovery — Explore a curated catalog of bundled scikit-learn datasets.
-- 📊 Data Profiling — Inspect dataset characteristics and identify potential quality issues.
-- ⚖️ Class Imbalance Detection — Highlight uneven class distributions that may affect model evaluation.
-- 🚨 Data Leakage Heuristics — Flag potential leakage risks that could lead to misleading performance.
-- 🎯 Baseline Evaluation — Establish baseline results for model comparison.
-- 🔄 Cross-Validation Analysis — Examine performance across validation folds.
-- 📉 Overfitting Indicators — Identify warning signs of a gap between training and validation performance.
-- 📋 Audit Findings & Status — Present detected concerns and audit results in a structured interface.
-- 📄 Report Generation — Export audit results into supported report formats.
+- 🔍 Dataset Discovery — Explore a curated collection of bundled scikit-learn datasets.
+- 📊 Data Profiling — Examine dataset characteristics and identify potential quality issues.
+- ⚖️ Class Imbalance Analysis — Detect uneven distributions in target classes.
+- 🚨 Data Leakage Checks — Identify potential leakage risks using implemented heuristics.
+- 🎯 Baseline Evaluation — Establish a reference point for model performance.
+- 🔄 Cross-Validation — Inspect performance across validation folds.
+- 📉 Overfitting Indicators — Highlight potential differences between training and validation performance.
+- 📋 Audit Findings — Present identified concerns and audit status in a structured interface.
+- 📄 Report Generation — Generate audit reports in supported formats.
 
-🧰 Tech Stack
+🧰 Technology Stack
 
-- Language: Python
-- Frontend: Streamlit
-- Data Analysis: Pandas
-- Visualization: Plotly
-- Machine Learning Utilities: scikit-learn
+Technology| Purpose
+Python| Core programming language
+Streamlit| Interactive web application
+Pandas| Data manipulation and analysis
+Plotly| Data visualization
+scikit-learn| Machine learning utilities and datasets
 
-🏗️ Project Structure
+🏗️ Project Architecture
 
 MLProof/
+│
 ├── core/
 │   ├── __init__.py
 │   ├── actual_audit.py
@@ -34,72 +49,70 @@ MLProof/
 │   ├── audit.py
 │   ├── demo.py
 │   └── discovery.py
+│
 ├── reports/
 │   ├── __init__.py
 │   └── report_generator.py
+│
 ├── app.py
 ├── requirements.txt
 └── README.md
 
-Architecture Overview
+Core Components
 
-- "app.py" — Main application entry point and Streamlit interface.
-- "core/" — Contains auditing logic, dataset discovery, UI components, and demonstration functionality.
-- "reports/" — Handles audit report generation and supported export formats.
-- "requirements.txt" — Lists the Python dependencies required to run the project.
+- "app.py" — Starts the Streamlit application.
+- "core/" — Organizes the auditing engine, dataset discovery, UI components, and demo functionality.
+- "reports/" — Contains report-generation functionality.
+- "requirements.txt" — Lists the project's Python dependencies.
 
-🚀 Getting Started
+⚙️ Installation & Setup
 
-Prerequisites
-
-- Python 3.10 or a compatible version supported by the dependencies
-- pip package manager
-
-Installation
-
-1. Clone the repository
+1. Clone the Repository
 
 git clone https://github.com/Shaik-Saniya67/MLProof.git
 cd MLProof
 
-2. Install dependencies
+2. Install Dependencies
 
 pip install -r requirements.txt
 
-3. Launch the application
+3. Run the Application
 
 streamlit run app.py
 
-4. Open the local application
+4. Open the Local Application
 
-Streamlit will provide a local URL in the terminal, usually:
+Open the local URL displayed in your terminal. By default, Streamlit commonly uses:
 
-http://localhost:8501
+"http://localhost:8501"
 
-🎯 Why MLProof?
+💡 Why MLProof?
 
-A machine learning model can produce impressive evaluation scores while still having problems such as data leakage, class imbalance, or inconsistent validation performance.
+A high-performing machine learning model is not automatically a reliable one. Data leakage, class imbalance, and unstable validation results can make evaluation scores misleading.
 
-MLProof aims to make these potential issues easier to inspect through a structured auditing workflow, helping users make more informed decisions about model reliability.
+MLProof aims to make these risks easier to identify and understand by bringing relevant checks and findings into one accessible interface.
 
-⚠️ Important Note
+⚠️ Limitations
 
-MLProof is an auditing aid, not a guarantee that a model is correct, unbiased, or production-ready. Automated checks and heuristic findings require interpretation and should be complemented by domain knowledge and appropriate validation.
+MLProof is an auditing aid, not a guarantee of model correctness, fairness, or production readiness. Automated checks may produce false positives or miss certain issues. Findings should be reviewed alongside domain knowledge and appropriate validation.
 
-🔮 Future Enhancements
+🔮 Future Improvements
 
-- Expanded dataset and model support
-- More detailed audit visualizations
-- Enhanced explanations for detected issues
-- Additional evaluation metrics and validation strategies
-- Improved report customization
+- Expand support for datasets and model types.
+- Add more detailed visual explanations of audit findings.
+- Introduce additional evaluation metrics.
+- Improve report customization and presentation.
+- Extend validation and reliability checks.
 
 👩‍💻 Author
 
 Saniya Shaik
 
-GitHub: "@Shaik-Saniya67" (https://github.com/Shaik-Saniya67)
+🔗 GitHub: "Shaik-Saniya67" (https://github.com/Shaik-Saniya67)
 
 ---
 
-MLProof — Because a good score is not the same as a trustworthy model.
+<p align="center">
+  <strong>MLProof</strong><br>
+  <em>Build trust in your machine learning workflow.</em>
+</p>
