@@ -106,7 +106,7 @@ MLProof is an auditing aid, not a guarantee of model correctness, fairness, or p
 
 **🌐 Live Demo**
 
-🚀 Try MLProof:  ***"Launch the Application" (https://mlproof-hackshphere2026.streamlit.app/)***
+🚀 Try MLProof: ***https://mlproof-hackshphere2026.streamlit.app/***
 
 **👩‍💻 Author**
 
